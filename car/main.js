@@ -93,7 +93,7 @@ function draw() {
 	for (var i = 0; i < 29; i++) {
 		var col = (i % 2) ? 'black' : 'white';
 		if (settings.hsl) {
-			col = 'hsl(' 10 + i * 25 + ', 70%, 66%)';
+			col = 'hsl(' + i * 5 + ', 70%, 66%)';
 		}
 		drawCircle(400, 280 - i * 10, settings.speed * time / (1000 + 50 * i), col, 400 - offset.x * 20 * i / 10, 400 - offset.y * 20 * i / 10);
 	}
