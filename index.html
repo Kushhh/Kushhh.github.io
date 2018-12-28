@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" ></canvas>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+	  <defs>
+	    <filter id="liquid">
+	      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+	      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 40 -10"/>
+	    </filter>
+	  </defs>
+	</svg>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.3/dat.gui.js"></script>
+    <script type="text/javascript">
+        var canvas = document.getElementById('canvas');
+		var ctx = canvas.getContext('2d');
+
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+
+
+		// var gui = new dat.GUI();
+        //  gui.add(settings, 'hsl');
+		//  gui.add(settings, 'stroke',0.5,20);
+		//  gui.add(settings, 'amp',0,120).step(1);;
+		//  gui.add(settings, 'period',0,60).step(1);
+        //
+        //
+		//  gui.add(settings, 'speed',0.5,20);
+		//  gui.add(settings, 'mouse',0.5,20);
+
+        class Part {
+            constructor(x,y,color,r) {
+                this.pos = {};
+                this.pos.x = x;
+                this.pos.y = y;
+                this.r = r || Math.random() * (30 - 1) + 1;
+                this.vel = {};
+                this.vel.x = Math.random()*2 - 1;
+                this.vel.y = Math.random()*2 - 1;
+                this.color= color || 'hsl(359, 100%, 100%)';
+                this.life = 0;
+            }
+            move(){
+                this.life++;
+
+                if(this.r>3) this.r *=0.99;
+                this.vel.x *= 0.99;
+                this.vel.y *= 0.99;
+
+                this.pos.x += this.vel.x;
+                this.pos.y += this.vel.y;
+
+                if( this.life % 64 === 0){
+                     //let newP = new Particle(this.pos.x,this.pos.y);
+                    //dots.push(newP);
+                }
+            }
+            draw(ctx) {
+                ctx.beginPath();
+                ctx.fillStyle = `${this.color}`;
+                ctx.arc(this.pos.x , this.pos.y, this.r , 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath();
+           }
+
+
+   }
+
+        const  dots = [];
+
+
+        canvas.onmousemove = function(e){
+			dots.push(new Part(e.layerX,e.layerY))
+            setTimeout(function () {
+                dots.push(new Part(e.layerX,e.layerY,'hsl(40, 97%, 71%)',8));
+                dots.push(new Part(e.layerX,e.layerY,'hsl(320, 97%, 71%)',10))
+            }, 100);
+		}
+
+        console.log(dots);
+        for (var i = 0; i < 100; i++) {
+            dots.push(
+                new Part(Math.random()*width,Math.random()*height)
+        );
+        }
+
+
+        function draw() {
+            ctx.clearRect(0, 0, width, height);
+            dots.forEach(function (item,index) {
+                item.move();
+                item.draw(ctx);
+                //console.log(item);
+                if(item.vel.x<0.1){
+                dots.splice(index,1);
+            }
+            })
+        }
+
+
+
+        function Render(){
+			draw();
+			window.requestAnimationFrame(Render);
+		}
+
+		Render();
+
+    </script>
+    <style media="screen">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            overflow: hidden;
+            width: 100vw;
+            height: 10vh;
+        }
+        body{
+          background: #330136;
+        }
+        canvas{
+             filter: url(#liquid)
+        }
+        svg{
+          position: absolute;
+          height: 1px;
+        }
+    </style>
+</body>
+</html>
