@@ -15,9 +15,9 @@ var H = window.innerHeight;
 var gui = new dat.GUI();
 gui.add(settings, 'hsl');
 gui.add(settings, 'stroke', 0.5, 20);
-gui.add(settings, 'amp', 0, 140).step(1);;
-gui.add(settings, 'period', 0, 80).step(1);
-gui.add(settings, 'speed', 0.5, 40);
+gui.add(settings, 'amp', 0, 100).step(1);;
+gui.add(settings, 'period', 0, 50).step(1);
+gui.add(settings, 'speed', 0.5, 20);
 
 
 
