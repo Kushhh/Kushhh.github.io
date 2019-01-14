@@ -1,6 +1,6 @@
 # Kushhh.github.io
 
 
-https://kushhh.github.io/car/ _
-https://kushhh.github.io/water/ _
-https://kushhh.github.io/triangles/
+https://kushhh.github.io/car/  <br />
+https://kushhh.github.io/water/  <br />
+https://kushhh.github.io/triangles/ <br />
