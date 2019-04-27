@@ -10,11 +10,13 @@ function test() {  // Проверка на число
 }
 
 function sum(n) {
-   for (const x of _.range(0, n+1)) {
-     let suma = x**2;
-     if (suma>n) break;
-      alert(x + " " + suma);
-  }
+   var result = 0;
+   var str = '';
+   for(var i=1; i<= n;i++){
+    result += i**2;
+    str += i + '^2 + ';
+   }
+   alert(str.substring(0, str.length -2) + ' = ' + result);
 }
 
 test();
