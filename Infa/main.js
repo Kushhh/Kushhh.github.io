@@ -14,9 +14,9 @@ function sum(n) {
    var str = '';
    for(var i=1; i<= n;i++){
     result += i**2;
-    str += i + '^2 + ';
+   
    }
-   alert(str.substring(0, str.length -2) + ' = ' + result);
+   alert(result);
 }
 
 test();
