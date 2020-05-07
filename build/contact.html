@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>contact</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <div class="mian">
+      <!-- HEADER START -->
+      <header class="out">
+        <div class="main-header">
+          <div class="main-header_blockL">
+            <div class="header-menu">
+              <img src="img/icons/menu.svg" alt="">
+            </div>
+            <div class="header-logo">
+              <a href="index.html"> <img src="img/logo.png" alt=""></a>
+            </div>
+            <menu>
+              <li><a href="basket.html">Акции %</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="shop.html">Магазины</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+            </menu>
+          </div>
+          <div class="main-header_blockR">
+            <div class="icons">
+              <ul>
+                <li><a href=""><img src="img/icons/loop.svg" alt=""></a></li>
+                <li><a href="customer.html"><img src="img/icons/shop.svg" alt=""></a></li>
+                <li><a href=""><img src="img/icons/love.svg" alt=""></a></li>
+                <li><a href="profile.html"><img src="img/icons/user.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="line"></div>
+            <div class="lang">
+              <a href="">Рус <img src="img/down.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="header-menu-mob" style="visibility: hidden;">
+        <menu>
+          <li><a class="active" href="basket.html">Акции %</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="shop.html">Магазины</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </menu>
+        <div class="header-menu-mob__foter">
+          <div class="social">
+            <img src="img/icons/f.svg" alt="">
+            <img src="img/icons/i.svg" alt="">
+            <img src="img/icons/telegram.svg" alt="">
+          </div>
+          <div class="sub-title">+ 38 067 79 10 634</div>
+        </div>
+      </div>
+    </div>
+    <!-- HEADER END -->
+    <!-- SHOP -->
+    <div class="shop-map out">
+      <div class="shop-map__title eco-sckin__title">контакты</div>
+      <div class="shop-map__info-block eco-sckin__info-block">
+        <div class="block">
+          <div class="shop-line eco-line"></div>
+          <p>Лично несу ответственность за каждую пару обуви Faber <br> — Шевчун О.А., директор Faber</p>
+        </div>
+      </div>
+    </div>
+    <!-- SHOP END  -->
+    <!-- MAP BLOCK STYLE 2 -->
+    <div class="map-block" style="margin-top: 100px;">
+      <div class="map-content " style="justify-content: flex-end !important;">
+        <div class="map-content__l" style="max-width: 500px;">
+          <div id="tab-1" class="tab-content current">
+            <div class="tab-con" style="padding-left: 0px !important;">
+              <h4>Обувная фабрика <br><br> Faber</h4>
+              <div class="min-map-block">
+                <div class="min-map-block__l">
+                  <img src="img/marker.png" alt="">
+                  <div class="info-map">
+                    <div class="tm-text"> Бровары <br> (киевская область) <br> Гагарина, 5/1 <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="min-map-block__r">
+                  <div class="tm-con"> почта: <br> support@faber.ua </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-content__r">
+          <div id="map" style="height: 550px !important;"> </div>
+        </div>
+      </div>
+    </div>
+    <!-- MAP BLOCK STYLE 2 END -->
+    <!-- Personal Card -->
+    <div class="personal-cards out" style="margin-top:100px">
+      <div class="p-card">
+        <div class="p-card__name">Шевчун Олег <br> Алексеевич</div>
+        <div class="p-card__pos">Директор</div>
+        <div class="p-card__line"></div>
+        <div class="p-card__inf"> орг. вопросы, крупный опт <br> +380 (67) 442-82-17 </div>
+      </div>
+      <div class="p-card">
+        <div class="p-card__name">Шевчун Олег <br> Алексеевич</div>
+        <div class="p-card__pos">Директор</div>
+        <div class="p-card__line"></div>
+        <div class="p-card__inf"> орг. вопросы, крупный опт <br> +380 (67) 442-82-17 </div>
+      </div>
+      <div class="p-card">
+        <div class="p-card__name">Шевчун Олег <br> Алексеевич</div>
+        <div class="p-card__pos">Директор</div>
+        <div class="p-card__line"></div>
+        <div class="p-card__inf"> орг. вопросы, крупный опт <br> +380 (67) 442-82-17 </div>
+      </div>
+      <div class="p-card">
+        <div class="p-card__name">Шевчун Олег <br> Алексеевич</div>
+        <div class="p-card__pos">Директор</div>
+        <div class="p-card__line"></div>
+        <div class="p-card__inf"> орг. вопросы, крупный опт <br> +380 (67) 442-82-17 </div>
+      </div>
+      <div class="p-card">
+        <div class="p-card__name">Шевчун Олег <br> Алексеевич</div>
+        <div class="p-card__pos">Директор</div>
+        <div class="p-card__line"></div>
+        <div class="p-card__inf"> орг. вопросы, крупный опт <br> +380 (67) 442-82-17 </div>
+      </div>
+    </div>
+    <!-- Personal Card  END  -->
+    <!--  CONTACT  -->
+    <div class="contact eco-sckin out" style="margin-top: 65px;">
+      <div class="eco-sckin__title">обратная <br> связь</div>
+      <div class="contact__info-block">
+        <div class="block">
+          <div class="contact-line"></div>
+          <p>Если у Вас возникли вопрос, напишите нам. Наши <br> менеджеры ответят сразу же!</p>
+          <form action="">
+            <div class="input-wrapper">
+              <input type="text" id="user" required value="">
+              <label for="user">Ваше имя</label>
+            </div>
+            <div class="input-wrapper">
+              <input type="text" id="user" required value="">
+              <label for="user">Ваше email</label>
+            </div>
+            <div class="textarea-wrapper">
+              <textarea required name="" id="" cols="30" rows="10"></textarea>
+              <label for="user">Ваше сообщение или вопрос</label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="contact__btn">
+        <button class="myBtn">Отправить</button>
+      </div>
+    </div>
+    <!-- CONTACT END -->
+    <!-- FOOTER  -->
+    <footer>
+      <div class="footer out">
+        <div class="footer__list-info">
+          <div class="footer__list-info__menu">
+            <li><a class="act" href="">Акции %</a> </li>
+            <li> <a href="">Каталог</a> </li>
+            <li> <a href="">Магазины</a></li>
+            <li> <a href="">О компании</a> </li>
+          </div>
+          <div class="footer__list-info__pages">
+            <li> <a class="act" href="">Обмен и Возврат</a></li>
+            <li> <a href="">Оплата и Доставка</a> </li>
+            <li> <a href="">Контакты</a> </li>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="in_block">
+            <div class="f-line"></div>
+            <div class="in_block_title">Время работы</div>
+            <div class="in_block_txt">10:00 - 19:00 <br> (без выходных)</div>
+          </div>
+          <div class="in_block">
+            <div class="f-line"></div>
+            <div class="in_block_title">Телефон</div>
+            <div class="in_block_txt">+ 38 067 79 10 634</div>
+          </div>
+        </div>
+        <div class="footer__email">
+          <div class="em-btn">
+            <div class="input-wrapper">
+              <input type="text" id="user" required value="">
+              <label for="user">Email</label>
+            </div>
+            <div class="footer__btn">
+              <button class="myBtn">Подписаться на новости</button>
+            </div>
+          </div>
+          <div class="fsocia">
+            <a href=""><img src="img/icons/f.svg" alt=""></a>
+            <a href=""><img src="img/icons/i.svg" alt=""></a>
+            <a href=""><img src="img/icons/t.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js" defer></script>
+    <!-- END scripts -->
+  </body>
+</html>

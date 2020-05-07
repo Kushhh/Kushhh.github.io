@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>contact</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <div class="mian">
+      <!-- HEADER START -->
+      <header class="out">
+        <div class="main-header">
+          <div class="main-header_blockL">
+            <div class="header-menu">
+              <img src="img/icons/menu.svg" alt="">
+            </div>
+            <div class="header-logo">
+              <a href="index.html"> <img src="img/logo.png" alt=""></a>
+            </div>
+            <menu>
+              <li><a href="basket.html">Акции %</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="shop.html">Магазины</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+            </menu>
+          </div>
+          <div class="main-header_blockR">
+            <div class="icons">
+              <ul>
+                <li><a href=""><img src="img/icons/loop.svg" alt=""></a></li>
+                <li><a href="customer.html"><img src="img/icons/shop.svg" alt=""></a></li>
+                <li><a href=""><img src="img/icons/love.svg" alt=""></a></li>
+                <li><a href="profile.html"><img src="img/icons/user.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="line"></div>
+            <div class="lang">
+              <a href="">Рус <img src="img/down.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="header-menu-mob" style="visibility: hidden;">
+        <menu>
+          <li><a class="active" href="basket.html">Акции %</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="shop.html">Магазины</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </menu>
+        <div class="header-menu-mob__foter">
+          <div class="social">
+            <img src="img/icons/f.svg" alt="">
+            <img src="img/icons/i.svg" alt="">
+            <img src="img/icons/telegram.svg" alt="">
+          </div>
+          <div class="sub-title">+ 38 067 79 10 634</div>
+        </div>
+      </div>
+    </div>
+    <!-- HEADER END -->
+    <!-- PROFILE -->
+    <div class="profile customer-page out" style="margin-bottom: 80px;">
+      <div class="profile-nav customer-page__title ">
+        <div class="sub-info">
+          <div class="sub-line"></div>
+          <h5 class="profile-title sub-title">Мой кабинет</h5>
+        </div>
+        <div class="profile-info">
+          <h2>Привет, Ксения</h2>
+          <a href="">Выход</a>
+        </div>
+      </div>
+      <div class="customer-page__content">
+        <div class="panel-tabs">
+          <div class="panel-tabs__l">
+            <li class="tab-link active-tab" data="open-tab1"><a href="#">
+                <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="user" d="M25 29C25 29 24.5 24 23.4446 21.9036C22.7127 19.9573 21.505 18.2266 19.9324 16.8706C19.0056 16.0881 17.9385 15.4902 16.7882 15.1091C17.9106 14.4474 18.8417 13.5038 19.4899 12.3712C20.138 11.2386 20.4807 9.95612 20.4843 8.6502C20.4961 7.31551 20.1565 6.00134 19.4998 4.84048C18.8431 3.67963 17.8925 2.71321 16.7442 2.03888C15.5959 1.36456 14.2904 1.00622 12.9598 1.00008C11.6292 0.993936 10.3206 1.3402 9.16609 2.00389C8.01162 2.66759 7.05225 3.62518 6.3849 4.77993C5.71756 5.93467 5.3659 7.24565 5.36546 8.58039C5.36501 9.91513 5.71579 11.2263 6.38235 12.3815C7.04892 13.5367 8.00765 14.495 9.16167 15.1595C8.05011 15.5316 7.01366 16.0997 6.10104 16.8371C4.51599 18.1962 3.28712 19.9242 2.52195 21.87C1.86943 23.4878 1.40912 25.1771 1.15052 26.903C1.15052 27.3559 1.03345 27.7418 1 28.0773V29H25ZM7.12125 8.56632C7.11795 7.39694 7.46083 6.2529 8.10644 5.27921C8.75205 4.30552 9.67132 3.54603 10.7477 3.09699C11.8241 2.64795 13.0092 2.52959 14.1528 2.75692C15.2963 2.98424 16.3468 3.54701 17.1712 4.37389C17.9955 5.20077 18.5565 6.25453 18.7831 7.4016C19.0098 8.54868 18.8918 9.73743 18.4441 10.8172C17.9965 11.8969 17.2393 12.819 16.2686 13.4666C15.2979 14.1142 14.1574 14.4582 12.9916 14.4548C11.4361 14.4504 9.94548 13.8286 8.84552 12.7252C7.74557 11.6219 7.12567 10.1267 7.12125 8.56632ZM2.85645 27.3559C2.8482 27.3003 2.8482 27.2438 2.85645 27.1881C3.08512 25.583 3.50629 24.0114 4.1108 22.5075C4.77222 20.7989 5.84017 19.2784 7.2216 18.0786C8.90554 16.7395 11.0116 16.0492 13.1589 16.1325C15.2689 16.0596 17.3347 16.7503 18.9791 18.0786C20.3385 19.2669 21.3793 20.7781 22.0063 22.474C22.594 23.9788 22.9929 25.551 23.1937 27.1546C23.1937 27.1546 23.1937 27.2888 23.1937 27.3559H2.85645Z" fill="#362320" stroke="#362320" stroke-width="0.5" />
+                </svg>
+                <span>Мои контакты</span> </a></li>
+            <li class="tab-link" data="open-tab2"><a href="#">
+                <svg id="return" width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M28.4684 2.11527C29.636 3.10462 30.5189 4.36757 31.0215 5.76759C31.3907 6.79581 31.5475 7.89956 31.4875 9.04817C31.3798 11.1092 30.5979 13.3143 29.0967 15.7895C26.4866 20.0934 22.3066 23.9708 16.3179 27.6434L15.7363 28L15.1547 27.6434C10.286 24.6576 6.62491 21.5328 3.96227 18.0901C2.73767 16.5068 1.12497 14.0551 0.396365 11.3673C0.0285576 10.0105 -0.0840005 8.70673 0.0617462 7.49219C0.228203 6.10536 0.731692 4.82024 1.55825 3.67257C2.36494 2.55243 3.45688 1.62254 4.71593 0.983418C5.9759 0.343828 7.3833 0.00571372 8.78558 0.00571372H8.78561C10.4685 0.00571372 12.1055 0.469969 13.5195 1.34828C14.3702 1.87677 15.1178 2.53965 15.7339 3.30614C16.3502 2.53818 17.0983 1.87404 17.95 1.34451C19.3647 0.464914 21.0027 0 22.6869 0C23.2642 0 23.8417 0.054814 24.4033 0.162935C25.894 0.449877 27.2997 1.12501 28.4684 2.11527ZM5.7075 16.8037C8.10171 19.8994 11.3866 22.7402 15.7363 25.4745C21.1113 22.0969 24.8701 18.5683 27.2149 14.7019C28.5311 12.5316 29.2143 10.6466 29.3035 8.93947C29.3489 8.06888 29.2326 7.23926 28.9578 6.47372C28.5807 5.42349 27.9158 4.47386 27.0349 3.72749C26.1537 2.98082 25.0974 2.47248 23.9802 2.25744C23.5576 2.17609 23.1225 2.13484 22.6869 2.13484C21.4195 2.13484 20.1878 2.48419 19.1247 3.14516C18.0884 3.78943 17.2558 4.69813 16.7169 5.773L15.7358 7.72942L14.7531 5.77382C14.2136 4.70024 13.381 3.79273 12.3454 3.1494C11.2829 2.48941 10.0519 2.14052 8.78558 2.14052C7.73293 2.14052 6.67453 2.39535 5.72477 2.87747C4.77536 3.3594 3.95317 4.05892 3.34716 4.90037C2.73198 5.75454 2.35739 6.71011 2.2337 7.74059C2.11998 8.68797 2.21309 9.72441 2.5104 10.8212C3.14815 13.1739 4.60099 15.3731 5.7075 16.8037Z" fill="#362320" />
+                </svg>
+                <span>Избранные</span> </a></li>
+            <li class="tab-link" data="open-tab3"><a href="#">
+                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="list-s" x="1" y="1" width="22" height="24" stroke="#362320" stroke-width="2" />
+                  <rect id="list-f" x="6" y="7" width="12" height="2" fill="#362320" />
+                  <rect id="list-f" x="6" y="12" width="12" height="2" fill="#362320" />
+                  <rect id="list-f" x="6" y="17" width="12" height="2" fill="#362320" />
+                </svg>
+                <span>История заказов</span> </a></li>
+          </div>
+          <div class="panel-tabs__r">
+            <div class="tab-block show-b wow" id="open-tab1" style="padding:30px 50px 60px 50px !important">
+              <div class="client-edit">
+                <div class="client-edit__l">
+                  <p>Редактирование личных данных</p>
+                  <div class="input-wrapper">
+                    <input type="text" id="user" required value="">
+                    <label for="user">Имя</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input type="text" id="user" required value="">
+                    <label for="user">Фамилия</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input type="text" id="user" required value="">
+                    <label for="user">Email</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input type="text" id="user" required value="">
+                    <label for="user">Дата рождения</label>
+                  </div>
+                  <div class="input-wrapper" style="margin-bottom: 0px !important;">
+                    <input type="text" id="user" required value="">
+                    <label for="user">Телефон</label>
+                  </div>
+                </div>
+                <div class="client-edit__r">
+                  <p>Изменение пароля</p>
+                  <div class="input-wrapper">
+                    <input type="text" id="user" required value="">
+                    <label for="user">Старый пароль</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input type="text" id="user" required value="">
+                    <label for="user">Новый пароль</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input type="text" id="user" required value="">
+                    <label for="user">Подтверждение пароля</label>
+                  </div>
+                  <div class="client-edit__btn">
+                    <button class="myBtn">Сохранить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-block wow fadeIn" style="background-color: #ffffff;" id="open-tab2">
+              <div class="like-items">
+                <div class="like-items__photo">
+                  <img src="img/photo2.png" alt="">
+                </div>
+                <div class="like-items__info">
+                  <div class="like-items__info__line1">
+                    <span>Код: 116407/1</span>
+                    <a href=""><img src="img/icons/trash.svg" alt=""></a>
+                  </div>
+                  <div class="like-items__info__line2">
+                    <p>Туфли с перфорацией</p>
+                    <p>2900 UAH</p>
+                  </div>
+                  <div class="like-items__info__line3">
+                    <div class="order-status">
+                      <p><img src="img/icons/ok.svg" alt=""> Есть в наличие</p>
+                    </div>
+                    <div class="pc-line3__btn">
+                      <button class="myBtn">Купить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="like-items">
+                <div class="like-items__photo">
+                  <img src="img/photo2.png" alt="">
+                </div>
+                <div class="like-items__info">
+                  <div class="like-items__info__line1">
+                    <span>Код: 116407/1</span>
+                    <a href=""><img src="img/icons/trash.svg" alt=""></a>
+                  </div>
+                  <div class="like-items__info__line2">
+                    <p>Туфли с перфорацией</p>
+                    <p>2900 UAH</p>
+                  </div>
+                  <div class="like-items__info__line3">
+                    <div class="order-status">
+                      <p><img src="img/icons/close-pro.svg" alt="">Нет в наличие</p>
+                    </div>
+                    <div class="wrap-checkbox">
+                      <input type="checkbox" id="myCheckbox1" />
+                      <label for="myCheckbox1"><span>Уведомить о наличии</span> </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="like-items">
+                <div class="like-items__photo">
+                  <img src="img/photo2.png" alt="">
+                </div>
+                <div class="like-items__info">
+                  <div class="like-items__info__line1">
+                    <span>Код: 116407/1</span>
+                    <a href=""><img src="img/icons/trash.svg" alt=""></a>
+                  </div>
+                  <div class="like-items__info__line2">
+                    <p>Туфли с перфорацией</p>
+                    <p>2900 UAH</p>
+                  </div>
+                  <div class="like-items__info__line3">
+                    <div class="order-status">
+                      <p><img src="img/icons/ok.svg" alt=""> Есть в наличие</p>
+                    </div>
+                    <div class="pc-line3__btn">
+                      <button class="myBtn">Купить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-block wow fadeIn" style="background-color: #ffffff;" id="open-tab3">
+              <div class="prof-order">
+                <div class="prof-order__title">
+                  <p><span>Заказ № 1136365443,</span>05 марта 2020</p>
+                  <div>Доставлено</div>
+                </div>
+                <div class="prof-order__items">
+                  <div class="prof-order__items_l">
+                    <img src="img/ph1.png" alt="">
+                  </div>
+                  <div class="prof-order__items_r">
+                    <div class="pror-order-line1">
+                      <p>Код: 116407/1</p>
+                      <p>1 шт</p>
+                    </div>
+                    <div class="pror-order-line2">
+                      <p>Туфли с перфорацией</p>
+                      <p>2900 UAH</p>
+                    </div>
+                    <div class="pror-order-line3">
+                      <p>44 размер</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="prof-order__items">
+                  <div class="prof-order__items_l">
+                    <img src="img/ph1.png" alt="">
+                  </div>
+                  <div class="prof-order__items_r">
+                    <div class="pror-order-line1">
+                      <p>Код: 116407/1</p>
+                      <p>1 шт</p>
+                    </div>
+                    <div class="pror-order-line2">
+                      <p>Туфли с перфорацией</p>
+                      <p>2900 UAH</p>
+                    </div>
+                    <div class="pror-order-line3">
+                      <p>44 размер</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="prof-order__price">
+                  <div class="prof-order__price_line1">
+                    <p>Всего</p>
+                    <div>2900 UAH</div>
+                  </div>
+                  <div class="prof-order__price_line2">
+                    <p>Доставка</p>
+                    <div>60 UAH</div>
+                  </div>
+                  <div class="pop-line"></div>
+                  <div class="prof-order__price_line3">
+                    <p>Сума заказа:</p>
+                    <p>2815 UAH</p>
+                  </div>
+                </div>
+              </div>
+              <div class="prof-order">
+                <div class="prof-order__title">
+                  <p><span>Заказ № 1136365443,</span>05 марта 2020</p>
+                  <div>Доставлено</div>
+                </div>
+                <div class="prof-order__items">
+                  <div class="prof-order__items_l">
+                    <img src="img/ph1.png" alt="">
+                  </div>
+                  <div class="prof-order__items_r">
+                    <div class="pror-order-line1">
+                      <p>Код: 116407/1</p>
+                      <p>1 шт</p>
+                    </div>
+                    <div class="pror-order-line2">
+                      <p>Туфли с перфорацией</p>
+                      <p>2900 UAH</p>
+                    </div>
+                    <div class="pror-order-line3">
+                      <p>44 размер</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="prof-order__price">
+                  <div class="prof-order__price_line1">
+                    <p>Всего</p>
+                    <div>2900 UAH</div>
+                  </div>
+                  <div class="prof-order__price_line2">
+                    <p>Доставка</p>
+                    <div>60 UAH</div>
+                  </div>
+                  <div class="pop-line"></div>
+                  <div class="prof-order__price_line3">
+                    <p>Сума заказа:</p>
+                    <p>2815 UAH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TAB MOB -->
+      <div id="accordion">
+        <div class="card">
+          <li class="tab-link trigger-open" data="open-tab1 " class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <a href="#">
+              <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="user" d="M25 29C25 29 24.5 24 23.4446 21.9036C22.7127 19.9573 21.505 18.2266 19.9324 16.8706C19.0056 16.0881 17.9385 15.4902 16.7882 15.1091C17.9106 14.4474 18.8417 13.5038 19.4899 12.3712C20.138 11.2386 20.4807 9.95612 20.4843 8.6502C20.4961 7.31551 20.1565 6.00134 19.4998 4.84048C18.8431 3.67963 17.8925 2.71321 16.7442 2.03888C15.5959 1.36456 14.2904 1.00622 12.9598 1.00008C11.6292 0.993936 10.3206 1.3402 9.16609 2.00389C8.01162 2.66759 7.05225 3.62518 6.3849 4.77993C5.71756 5.93467 5.3659 7.24565 5.36546 8.58039C5.36501 9.91513 5.71579 11.2263 6.38235 12.3815C7.04892 13.5367 8.00765 14.495 9.16167 15.1595C8.05011 15.5316 7.01366 16.0997 6.10104 16.8371C4.51599 18.1962 3.28712 19.9242 2.52195 21.87C1.86943 23.4878 1.40912 25.1771 1.15052 26.903C1.15052 27.3559 1.03345 27.7418 1 28.0773V29H25ZM7.12125 8.56632C7.11795 7.39694 7.46083 6.2529 8.10644 5.27921C8.75205 4.30552 9.67132 3.54603 10.7477 3.09699C11.8241 2.64795 13.0092 2.52959 14.1528 2.75692C15.2963 2.98424 16.3468 3.54701 17.1712 4.37389C17.9955 5.20077 18.5565 6.25453 18.7831 7.4016C19.0098 8.54868 18.8918 9.73743 18.4441 10.8172C17.9965 11.8969 17.2393 12.819 16.2686 13.4666C15.2979 14.1142 14.1574 14.4582 12.9916 14.4548C11.4361 14.4504 9.94548 13.8286 8.84552 12.7252C7.74557 11.6219 7.12567 10.1267 7.12125 8.56632ZM2.85645 27.3559C2.8482 27.3003 2.8482 27.2438 2.85645 27.1881C3.08512 25.583 3.50629 24.0114 4.1108 22.5075C4.77222 20.7989 5.84017 19.2784 7.2216 18.0786C8.90554 16.7395 11.0116 16.0492 13.1589 16.1325C15.2689 16.0596 17.3347 16.7503 18.9791 18.0786C20.3385 19.2669 21.3793 20.7781 22.0063 22.474C22.594 23.9788 22.9929 25.551 23.1937 27.1546C23.1937 27.1546 23.1937 27.2888 23.1937 27.3559H2.85645Z" fill="#362320" stroke="#362320" stroke-width="0.5" />
+              </svg>
+              <span>Мои контакты</span> </a></li>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="tab-block  out" id="open-tab1">
+              <div class="tab-block show-b wow" id="open-tab1 del-pad" style="padding-top: 30px">
+                <div class="client-edit">
+                  <div class="client-edit__l">
+                    <p>Редактирование личных данных</p>
+                    <div class="input-wrapper">
+                      <input type="text" id="user" required value="">
+                      <label for="user">Имя</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <input type="text" id="user" required value="">
+                      <label for="user">Фамилия</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <input type="text" id="user" required value="">
+                      <label for="user">Email</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <input type="text" id="user" required value="">
+                      <label for="user">Дата рождения</label>
+                    </div>
+                    <div class="input-wrapper" style="margin-bottom: 0px !important;">
+                      <input type="text" id="user" required value="">
+                      <label for="user">Телефон</label>
+                    </div>
+                  </div>
+                  <div class="client-edit__r">
+                    <p>Изменение пароля</p>
+                    <div class="input-wrapper">
+                      <input type="text" id="user" required value="">
+                      <label for="user">Старый пароль</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <input type="text" id="user" required value="">
+                      <label for="user">Новый пароль</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <input type="text" id="user" required value="">
+                      <label for="user">Подтверждение пароля</label>
+                    </div>
+                    <div class="client-edit__btn">
+                      <button class="myBtn">Сохранить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <li class="tab-link" data="open-tab2" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo"><a>
+              <a href="#">
+                <svg id="return" width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M28.4684 2.11527C29.636 3.10462 30.5189 4.36757 31.0215 5.76759C31.3907 6.79581 31.5475 7.89956 31.4875 9.04817C31.3798 11.1092 30.5979 13.3143 29.0967 15.7895C26.4866 20.0934 22.3066 23.9708 16.3179 27.6434L15.7363 28L15.1547 27.6434C10.286 24.6576 6.62491 21.5328 3.96227 18.0901C2.73767 16.5068 1.12497 14.0551 0.396365 11.3673C0.0285576 10.0105 -0.0840005 8.70673 0.0617462 7.49219C0.228203 6.10536 0.731692 4.82024 1.55825 3.67257C2.36494 2.55243 3.45688 1.62254 4.71593 0.983418C5.9759 0.343828 7.3833 0.00571372 8.78558 0.00571372H8.78561C10.4685 0.00571372 12.1055 0.469969 13.5195 1.34828C14.3702 1.87677 15.1178 2.53965 15.7339 3.30614C16.3502 2.53818 17.0983 1.87404 17.95 1.34451C19.3647 0.464914 21.0027 0 22.6869 0C23.2642 0 23.8417 0.054814 24.4033 0.162935C25.894 0.449877 27.2997 1.12501 28.4684 2.11527ZM5.7075 16.8037C8.10171 19.8994 11.3866 22.7402 15.7363 25.4745C21.1113 22.0969 24.8701 18.5683 27.2149 14.7019C28.5311 12.5316 29.2143 10.6466 29.3035 8.93947C29.3489 8.06888 29.2326 7.23926 28.9578 6.47372C28.5807 5.42349 27.9158 4.47386 27.0349 3.72749C26.1537 2.98082 25.0974 2.47248 23.9802 2.25744C23.5576 2.17609 23.1225 2.13484 22.6869 2.13484C21.4195 2.13484 20.1878 2.48419 19.1247 3.14516C18.0884 3.78943 17.2558 4.69813 16.7169 5.773L15.7358 7.72942L14.7531 5.77382C14.2136 4.70024 13.381 3.79273 12.3454 3.1494C11.2829 2.48941 10.0519 2.14052 8.78558 2.14052C7.73293 2.14052 6.67453 2.39535 5.72477 2.87747C4.77536 3.3594 3.95317 4.05892 3.34716 4.90037C2.73198 5.75454 2.35739 6.71011 2.2337 7.74059C2.11998 8.68797 2.21309 9.72441 2.5104 10.8212C3.14815 13.1739 4.60099 15.3731 5.7075 16.8037Z" fill="#362320" />
+                </svg>
+                <span>Избранные</span> </a></li>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="tab-block  out" id="open-tab2">
+              <div class="open-tab2-con">
+                <div class="like-items">
+                  <div class="like-items__photo">
+                    <img src="img/photo2.png" alt="">
+                  </div>
+                  <div class="like-items__info">
+                    <div class="like-items__info__line1">
+                      <span>Код: 116407/1</span>
+                      <a href=""><img src="img/icons/trash.svg" alt=""></a>
+                    </div>
+                    <div class="like-items__info__line2">
+                      <p>Туфли с перфорацией</p>
+                      <p>2900 UAH</p>
+                    </div>
+                    <div class="like-items__info__line3">
+                      <div class="order-status">
+                        <p><img src="img/icons/ok.svg" alt=""> Есть в наличие</p>
+                      </div>
+                      <div class="pc-line3__btn">
+                        <button class="myBtn">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="like-items">
+                  <div class="like-items__photo">
+                    <img src="img/photo2.png" alt="">
+                  </div>
+                  <div class="like-items__info">
+                    <div class="like-items__info__line1">
+                      <span>Код: 116407/1</span>
+                      <a href=""><img src="img/icons/trash.svg" alt=""></a>
+                    </div>
+                    <div class="like-items__info__line2">
+                      <p>Туфли с перфорацией</p>
+                      <p>2900 UAH</p>
+                    </div>
+                    <div class="like-items__info__line3">
+                      <div class="order-status">
+                        <p><img src="img/icons/close-pro.svg" alt="">Нет в наличие</p>
+                      </div>
+                      <div class="wrap-checkbox">
+                        <input type="checkbox" id="myCheckbox1" />
+                        <label for="myCheckbox1"><span>Уведомить о наличии</span> </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="like-items">
+                  <div class="like-items__photo">
+                    <img src="img/photo2.png" alt="">
+                  </div>
+                  <div class="like-items__info">
+                    <div class="like-items__info__line1">
+                      <span>Код: 116407/1</span>
+                      <a href=""><img src="img/icons/trash.svg" alt=""></a>
+                    </div>
+                    <div class="like-items__info__line2">
+                      <p>Туфли с перфорацией</p>
+                      <p>2900 UAH</p>
+                    </div>
+                    <div class="like-items__info__line3">
+                      <div class="order-status">
+                        <p><img src="img/icons/ok.svg" alt=""> Есть в наличие</p>
+                      </div>
+                      <div class="pc-line3__btn">
+                        <button class="myBtn">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <li class="tab-link" data="open-tab3" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><a>
+              <a href="#">
+                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="list-s" x="1" y="1" width="22" height="24" stroke="#362320" stroke-width="2" />
+                  <rect id="list-f" x="6" y="7" width="12" height="2" fill="#362320" />
+                  <rect id="list-f" x="6" y="12" width="12" height="2" fill="#362320" />
+                  <rect id="list-f" x="6" y="17" width="12" height="2" fill="#362320" />
+                </svg>
+                <span>История заказов</span> </a></li>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="tab-block  out" id="open-tab3">
+              <div class="open-tab-con">
+                <div class="tb-text">
+                  <div class="tb-text__title">Гарантийный срок</div>
+                  <div class="tb-text__txt">Распространяется на всю обувь Faber, регулируется Законом Украины «О защите прав потребителей». Составляет от 30 до 70 дней в зависимости от типа обуви и подошвы, действует со дня продажи или с начала сезона.</div>
+                </div>
+                <div class="tb-text">
+                  <div class="tb-text__title">Возврат обуви</div>
+                  <div class="tb-text__txt">Вы можете отказаться от вашего заказа по любой причине и вернуть обувь надлежащего качества (не ношенная, имеет товарный вид) в течении 14 календарных дней с момента оплаты, не считая дня покупки.</div>
+                </div>
+                <div class="tb-text">
+                  <div class="tb-text__title">Обмен обуви</div>
+                  <div class="tb-text__txt">Удобная и простая процедура обмена. Мы оперативно осуществим обмен на другой размер или другую модель обуви. Главное, чтобы обувь была надлежащего качества и с момента покупки прошло не более 14 календарных дней.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TAB MOB END -->
+    </div>
+    <!-- PROFILE END-->
+    <!-- FOOTER  -->
+    <footer>
+      <div class="footer out">
+        <div class="footer__list-info">
+          <div class="footer__list-info__menu">
+            <li><a class="act" href="">Акции %</a> </li>
+            <li> <a href="">Каталог</a> </li>
+            <li> <a href="">Магазины</a></li>
+            <li> <a href="">О компании</a> </li>
+          </div>
+          <div class="footer__list-info__pages">
+            <li> <a class="act" href="">Обмен и Возврат</a></li>
+            <li> <a href="">Оплата и Доставка</a> </li>
+            <li> <a href="">Контакты</a> </li>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="in_block">
+            <div class="f-line"></div>
+            <div class="in_block_title">Время работы</div>
+            <div class="in_block_txt">10:00 - 19:00 <br> (без выходных)</div>
+          </div>
+          <div class="in_block">
+            <div class="f-line"></div>
+            <div class="in_block_title">Телефон</div>
+            <div class="in_block_txt">+ 38 067 79 10 634</div>
+          </div>
+        </div>
+        <div class="footer__email">
+          <div class="em-btn">
+            <div class="input-wrapper">
+              <input type="text" id="user" required value="">
+              <label for="user">Email</label>
+            </div>
+            <div class="footer__btn">
+              <button class="myBtn">Подписаться на новости</button>
+            </div>
+          </div>
+          <div class="fsocia">
+            <a href=""><img src="img/icons/f.svg" alt=""></a>
+            <a href=""><img src="img/icons/i.svg" alt=""></a>
+            <a href=""><img src="img/icons/t.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js" defer></script>
+    <!-- END scripts -->
+  </body>
+</html>
