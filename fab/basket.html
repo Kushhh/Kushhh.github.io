@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>basket</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <div class="mian">
+      <!-- MODAL -->
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-login" role="document">
+          <div class="modal-content mod-con-login">
+            <button class="close-mod" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="con-login">
+              <div class="con-login__l">
+                <div class="mcl-title">Я новый пользователь</div>
+                <div class="mcl-subtitle">Отслеживай заказы и накапливай бонусы в личном кабинете</div>
+                <div class="mcl__btn">
+                  <button class="myBtn">Зарегистрироваться</button>
+                </div>
+              </div>
+              <div class="con-login__hr"></div>
+              <div class="con-login__r">
+                <div class="mcr-title">Вход</div>
+                <div class="input-wrapper">
+                  <input type="text" id="user" required value="">
+                  <label for="user">Email</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="password" id="password" required value="">
+                  <label for="user">Пароль</label>
+                </div>
+                <div class="mcr__btn">
+                  <button class="myBtn">Войти</button>
+                </div>
+                <div class="foget">
+                  <a href="">Я забыл(-ла) свой пароль</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL END -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+        <div class="modal-login" role="document">
+          <div class="modal-content mod-con-login">
+            <button class="close-mod" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="mod-line">
+              <p>Чтобы добавить товар к “Избранным” необходимо войти в свой аккаунт</p>
+            </div>
+            <div class="con-login">
+              <div class="con-login__l">
+                <div class="mcl-title">Я новый пользователь</div>
+                <div class="mcl-subtitle">Отслеживай заказы и накапливай бонусы в личном кабинете</div>
+                <div class="mcl__btn">
+                  <button class="myBtn">Зарегистрироваться</button>
+                </div>
+              </div>
+              <div class="con-login__hr"></div>
+              <div class="con-login__r">
+                <div class="mcr-title">Вход</div>
+                <div class="input-wrapper">
+                  <input type="text" id="user" required value="">
+                  <label for="user">Email</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="password" id="password" required value="">
+                  <label for="user">Пароль</label>
+                </div>
+                <div class="mcr__btn">
+                  <button class="myBtn">Войти</button>
+                </div>
+                <div class="foget">
+                  <a href="">Я забыл(-ла) свой пароль</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HEADER START -->
+      <header class="out">
+        <div class="main-header">
+          <div class="main-header_blockL">
+            <div class="header-menu">
+              <img src="img/icons/menu.svg" alt="">
+            </div>
+            <div class="header-logo">
+              <a href="index.html"> <img src="img/logo.png" alt=""></a>
+            </div>
+            <menu>
+              <li><a href="basket.html">Акции %</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="shop.html">Магазины</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+            </menu>
+          </div>
+          <div class="main-header_blockR">
+            <div class="icons">
+              <ul>
+                <li><a href=""><img src="img/icons/loop.svg" alt=""></a></li>
+                <li><a href="customer.html"><img src="img/icons/shop.svg" alt=""></a></li>
+                <li><a href="" data-toggle="modal" data-target="#modal"><img src="img/icons/love.svg" alt=""></a></li>
+                <li><a href="profile.html"><img src="img/icons/user.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="line"></div>
+            <div class="lang">
+              <a href="" data-toggle="modal" data-target="#modal2">Рус <img src="img/down.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="header-menu-mob" style="visibility: hidden;">
+        <menu>
+          <li><a class="active" href="basket.html">Акции %</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="shop.html">Магазины</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </menu>
+        <div class="header-menu-mob__foter">
+          <div class="social">
+            <img src="img/icons/f.svg" alt="">
+            <img src="img/icons/i.svg" alt="">
+            <img src="img/icons/telegram.svg" alt="">
+          </div>
+          <div class="sub-title">+ 38 067 79 10 634</div>
+        </div>
+      </div>
+      <!-- HEADER END -->
+      <div class="basket customer-page out" style="margin-bottom: 80px;">
+        <div class="basket_customer-page__title "> заказ </div>
+        <div class="basket-order">
+          <div class="basket-order__l">
+            <div class="bo-data">
+              <div class="sub-info">
+                <div class="sub-line"></div>
+                <h5 class="sub-title">Контактные данные</h5>
+              </div>
+              <div class="input-wrapper">
+                <input type="text" id="user" required value="">
+                <label for="user">Имя</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="text" id="user" required value="">
+                <label for="user">Фамилия</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="text" id="user" required value="">
+                <label for="user">Email</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="text" id="user" required value="">
+                <label for="user">Телефон</label>
+              </div>
+            </div>
+            <div class="bo-delivery">
+              <div class="sub-info">
+                <div class="sub-line"></div>
+                <h5 class="sub-title">Доставка</h5>
+              </div>
+              <div class="bo-delivery__con">
+                <div class="bo-delivery__con_main">
+                  <div class="wrap-radio radio-delivery" data="delivery1">
+                    <input type="radio" name="delivery" checked id="myCheckbox1" />
+                    <label for="myCheckbox1"><span>Новая почта</span> </label>
+                  </div>
+                  <div class="wrap-radio radio-delivery" data="delivery2">
+                    <input type="radio" name="delivery" id="myCheckbox2" />
+                    <label for="myCheckbox2"><span>Автолюкс</span> </label>
+                  </div>
+                  <div class="wrap-radio radio-delivery" data="delivery3">
+                    <input type="radio" name="delivery" id="myCheckbox3" />
+                    <label for="myCheckbox3"><span>Самовывоз</span> </label>
+                  </div>
+                  <div class="wrap-radio radio-delivery" data="delivery4">
+                    <input type="radio" name="delivery" id="myCheckbox4" />
+                    <label for="myCheckbox4"><span>Самовывоз со скалада</span> </label>
+                  </div>
+                  <div class="bod-line"></div>
+                </div>
+                <div class="del-tab delivery1 del-show">
+                  <div class="check">
+                    <div class="wrap-radio radio-way" data="way1">
+                      <input type="radio" name="way" id="myCheckbox5" />
+                      <label for="myCheckbox5"><span>Курьером</span> </label>
+                    </div>
+                    <div class="wrap-radio radio-way" data="way2">
+                      <input type="radio" name="way" checked id="myCheckbox6" />
+                      <label for="myCheckbox6"><span>В отделение НП</span> </label>
+                    </div>
+                  </div>
+                  <div class="select-tab way1">
+                    <select name="slct" id="slct">
+                      <option value="" select hidden>Город</option>
+                      <option value="1">Киев</option>
+                      <option value="2">Харьков</option>
+                      <option value="3">Львов</option>
+                    </select>
+                    <div class="input-wrapper">
+                      <input type="text" id="user" required value="">
+                      <label for="user">Улица</label>
+                    </div>
+                    <div class="in-line">
+                      <div class="input-wrapper">
+                        <input type="text" id="user" required value="">
+                        <label for="user">Дом</label>
+                      </div>
+                      <div class="input-wrapper">
+                        <input type="text" id="user" required value="">
+                        <label for="user">Квартира</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="select-tab way2 del-show">
+                    <select name="slct" id="slct">
+                      <option value="" select hidden>Город</option>
+                      <option value="1">Киев</option>
+                      <option value="2">Харьков</option>
+                      <option value="3">Львов</option>
+                    </select>
+                    <select name="slct" id="slct">
+                      <option value="" select hidden>Отделение</option>
+                      <option value="1">№147</option>
+                      <option value="2">№147</option>
+                      <option value="3">№147</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="del-tab delivery3">
+                  <select name="slct" id="slct">
+                    <option value="" select hidden>Город</option>
+                    <option value="1">Киев </option>
+                    <option value="2">Харьков</option>
+                    <option value="3">Львов</option>
+                  </select>
+                  <select name="slct" id="slct">
+                    <option value="" select hidden>Магазин</option>
+                    <option value="1">№147</option>
+                    <option value="2">№147</option>
+                    <option value="3">№147</option>
+                  </select>
+                </div>
+              </div>
+              <div class="del-tab delivery4">
+                <p> Адрес склада: Бровары <br>(киевская область) <br> Гагарина, 5/1 </p>
+              </div>
+            </div>
+            <div class="bo-money">
+              <div class="sub-info">
+                <div class="sub-line"></div>
+                <h5 class="sub-title">Оплата</h5>
+              </div>
+              <div class="wrap-radio" data="delivery10">
+                <input type="radio" name="delivery" checked id="myCheckbox10" />
+                <label for="myCheckbox10"><span>Оплата при получении</span> </label>
+              </div>
+              <div class="wrap-radio" data="delivery20">
+                <input type="radio" name="delivery" id="myCheckbox20" />
+                <label for="myCheckbox20"><span>Переводом на банковскую карту</span> </label>
+              </div>
+              <div class="wrap-radio" data="delivery3">
+                <input type="radio" name="delivery" id="myCheckbox30" />
+                <label for="myCheckbox30"><span>Наложенным платежом в отделении перевозчика или курьеру</span> </label>
+              </div>
+            </div>
+            <div class="bo-send">
+              <div class="sub-info">
+                <div class="sub-line"></div>
+                <h5 class="sub-title">Комментарии к заказу</h5>
+              </div>
+              <div class="textarea-wrapper">
+                <textarea required name="" id="" cols="30" rows="10"></textarea>
+                <label for="user">Ваши Комментарии</label>
+              </div>
+              <div class="bo-send__btn">
+                <button class="myBtn">Оформить заказ</button>
+              </div>
+            </div>
+          </div>
+          <div class="basket-order__r">
+            <div class="basket-order__r_title"> Вы выбрали </div>
+            <div class="basket-order__r_check">
+              <div class="prof-order__items">
+                <div class="prof-order__items_l">
+                  <img src="img/ph1.png" alt="">
+                </div>
+                <div class="prof-order__items_r">
+                  <div class="pror-order-line1">
+                    <p>Код: 116407/1</p>
+                    <p>1 шт</p>
+                  </div>
+                  <div class="pror-order-line2">
+                    <p>Туфли с перфорацией</p>
+                    <p>2900 UAH</p>
+                  </div>
+                  <div class="pror-order-line3">
+                    <p>44 размер</p>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-order-price prof-order__price">
+                <div class="pop-line"></div>
+                <div class="prof-order__price_line">
+                  <p>1 товар на сумму</p>
+                  <div>2900 UAH</div>
+                </div>
+                <div class="prof-order__price_line">
+                  <p>Доставка</p>
+                  <div>60 UAH</div>
+                </div>
+                <div class="prof-order__price_line">
+                  <p>Скидка</p>
+                  <div>-60 UAH</div>
+                </div>
+                <div class="pop-line"></div>
+                <div class="prof-order__price_line3">
+                  <p>Сума заказа:</p>
+                  <p>2815 UAH</p>
+                </div>
+              </div>
+              <p class="info-for-user"> Оформляя заказ, я принимаю <a href="">условия договора публичной оферты</a> , <a href="">возврата</a> и <a href="">безопасности</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bo-send__btn_new bo-send__btn">
+          <button class="myBtn">Оформить заказ</button>
+        </div>
+        <a href="" class="back">
+          <img src="img/icons/arl.svg" alt="">
+          <span> Вернуться к покупкам</span>
+        </a>
+      </div>
+      <!-- FOOTER  -->
+      <footer>
+        <div class="footer out">
+          <div class="footer__list-info">
+            <div class="footer__list-info__menu">
+              <li><a class="act" href="">Акции %</a> </li>
+              <li> <a href="">Каталог</a> </li>
+              <li> <a href="">Магазины</a></li>
+              <li> <a href="">О компании</a> </li>
+            </div>
+            <div class="footer__list-info__pages">
+              <li> <a class="act" href="">Обмен и Возврат</a></li>
+              <li> <a href="">Оплата и Доставка</a> </li>
+              <li> <a href="">Контакты</a> </li>
+            </div>
+          </div>
+          <div class="footer__info">
+            <div class="in_block">
+              <div class="f-line"></div>
+              <div class="in_block_title">Время работы</div>
+              <div class="in_block_txt">10:00 - 19:00 <br> (без выходных)</div>
+            </div>
+            <div class="in_block">
+              <div class="f-line"></div>
+              <div class="in_block_title">Телефон</div>
+              <div class="in_block_txt">+ 38 067 79 10 634</div>
+            </div>
+          </div>
+          <div class="footer__email">
+            <div class="em-btn">
+              <div class="input-wrapper">
+                <input type="text" id="user" required value="">
+                <label for="user">Email</label>
+              </div>
+              <div class="footer__btn">
+                <button class="myBtn">Подписаться на новости</button>
+              </div>
+            </div>
+            <div class="fsocia">
+              <a href=""><img src="img/icons/f.svg" alt=""></a>
+              <a href=""><img src="img/icons/i.svg" alt=""></a>
+              <a href=""><img src="img/icons/t.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js" defer></script>
+    <!-- END scripts -->
+  </body>
+</html>

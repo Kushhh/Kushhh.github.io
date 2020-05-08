@@ -1,0 +1,591 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Index page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <div class="mian">
+      <!-- MODAL -->
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-login" role="document">
+          <div class="modal-content mod-con-login">
+            <button class="close-mod" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="con-login">
+              <div class="con-login__l">
+                <div class="mcl-title">Я новый пользователь</div>
+                <div class="mcl-subtitle">Отслеживай заказы и накапливай бонусы в личном кабинете</div>
+                <div class="mcl__btn">
+                  <button class="myBtn">Зарегистрироваться</button>
+                </div>
+              </div>
+              <div class="con-login__hr"></div>
+              <div class="con-login__r">
+                <div class="mcr-title">Вход</div>
+                <div class="input-wrapper">
+                  <input type="text" id="user" required value="">
+                  <label for="user">Email</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="password" id="password" required value="">
+                  <label for="user">Пароль</label>
+                </div>
+                <div class="mcr__btn">
+                  <button class="myBtn">Войти</button>
+                </div>
+                <div class="foget">
+                  <a href="">Я забыл(-ла) свой пароль</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL END -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+        <div class="modal-login" role="document">
+          <div class="modal-content mod-con-login">
+            <button class="close-mod" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="mod-line">
+              <p>Чтобы добавить товар к “Избранным” необходимо войти в свой аккаунт</p>
+            </div>
+            <div class="con-login">
+              <div class="con-login__l">
+                <div class="mcl-title">Я новый пользователь</div>
+                <div class="mcl-subtitle">Отслеживай заказы и накапливай бонусы в личном кабинете</div>
+                <div class="mcl__btn">
+                  <button class="myBtn">Зарегистрироваться</button>
+                </div>
+              </div>
+              <div class="con-login__hr"></div>
+              <div class="con-login__r">
+                <div class="mcr-title">Вход</div>
+                <div class="input-wrapper">
+                  <input type="text" id="user" required value="">
+                  <label for="user">Email</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="password" id="password" required value="">
+                  <label for="user">Пароль</label>
+                </div>
+                <div class="mcr__btn">
+                  <button class="myBtn">Войти</button>
+                </div>
+                <div class="foget">
+                  <a href="">Я забыл(-ла) свой пароль</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HEADER START -->
+      <header class="out">
+        <div class="main-header">
+          <div class="main-header_blockL">
+            <div class="header-menu">
+              <img src="img/icons/menu.svg" alt="">
+            </div>
+            <div class="header-logo">
+              <a href="index.html"> <img src="img/logo.png" alt=""></a>
+            </div>
+            <menu>
+              <li><a href="basket.html">Акции %</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="shop.html">Магазины</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+            </menu>
+          </div>
+          <div class="main-header_blockR">
+            <div class="icons">
+              <ul>
+                <li><a href=""><img src="img/icons/loop.svg" alt=""></a></li>
+                <li><a href="customer.html"><img src="img/icons/shop.svg" alt=""></a></li>
+                <li><a href="" data-toggle="modal" data-target="#modal"><img src="img/icons/love.svg" alt=""></a></li>
+                <li><a href="profile.html"><img src="img/icons/user.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="line"></div>
+            <div class="lang">
+              <a href="" data-toggle="modal" data-target="#modal2">Рус <img src="img/down.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="header-menu-mob" style="visibility: hidden;">
+        <menu>
+          <li><a class="active" href="basket.html">Акции %</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="shop.html">Магазины</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </menu>
+        <div class="header-menu-mob__foter">
+          <div class="social">
+            <img src="img/icons/f.svg" alt="">
+            <img src="img/icons/i.svg" alt="">
+            <img src="img/icons/telegram.svg" alt="">
+          </div>
+          <div class="sub-title">+ 38 067 79 10 634</div>
+        </div>
+      </div>
+      <!-- HEADER END -->
+      <!-- ABOUT COMP -->
+      <div class="about-st">
+        <div class="about-comp out">
+          <div class="customer-page__title "> О компании </div>
+          <div class="about-factory">
+            <div class="sub-info">
+              <div class="sub-line"></div>
+              <h5 class="sub-title">Обувная <br> фабрика <br> Faber</h5>
+            </div>
+            <div class="about-factory__cards">
+              <div class="about-factory__cards_card">
+                <img src="img/p1.png" alt="">
+                <div>
+                  <p>Украинская кожаная обувь</p>
+                </div>
+              </div>
+              <div class="about-factory__cards_card">
+                <img src="img/desc.png" alt="">
+                <div>
+                  <p><span>21</span> лет на рынке </p>
+                </div>
+              </div>
+              <div class="about-factory__cards_card">
+                <img src="img/man.png" alt="">
+                <div>
+                  <p>Более <span>500</span> созданных моделей</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-silver-line"></div>
+      </div>
+      <!-- ABOUT COMP END -->
+      <!-- TARGET -->
+      <div class="target-block-background">
+        <div class="target-block out" style="align-items: flex-start;">
+          <div class="sub-info">
+            <div class="sub-line"></div>
+            <h5 class="sub-title">Наша цель</h5>
+          </div>
+          <div class="target-block__txt">
+            <p>Сделать жизнь мужчин комфортней!</p>
+            <p>Мы один из крупнейших производитлей мужской обуви в Украине. Производим исключительно кожаную обувь. Особое внимание уделяется разработке новых моделей. Постоянно следим за мировыми трендами и производим только качественную обувь. Используем любую возможность сделать обувь Faber лучше — активно внедряем новые технологии в процесс производства</p>
+          </div>
+        </div>
+      </div>
+      <!-- TARGET END -->
+      <!-- WHY FAVER -->
+      <div class="why-block out">
+        <div class="customer-page__title "> Почему Faber? </div>
+        <div class="why-reasons">
+          <div class="why-reasons__line"></div>
+          <div class="reason-card">
+            <div class="reason-card__title">
+              <img src="img/icons/ecoco.svg" alt="">
+              <p>Только кожа и ничего кроме кожи</p>
+            </div>
+            <div class="reason-card__txt">
+              <p>Для производства обуви заказываем только лучшую кожу. Стоимость такой кожи выше, что гарантирует надежность и долговечность обуви Faber. Наши материалы не деформируются и обладают высокой прочностью. </p>
+            </div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-card__title">
+              <img src="img/icons/arm.svg" alt="">
+              <p>Надежные поставщики</p>
+            </div>
+            <div class="reason-card__txt">
+              <p>Сотрудничаем с ведущими производителями подошвы из: Италии, Турции и Украины, — а также другими проверенными поставщиками фурнитуры. Закупаем в Австрии и Италии.</p>
+            </div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-card__title">
+              <img src="img/icons/eco-list.svg" alt="">
+              <p>ЭКО-технологии</p>
+            </div>
+            <div class="reason-card__txt">
+              <p>Сотрудничаем с ведущими производителями подошвы из: Италии, Турции и Украины, — а также другими проверенными поставщиками фурнитуры. Закупаем в Австрии и Италии.</p>
+            </div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-card__title">
+              <img src="img/icons/spec.svg" alt="">
+              <p>Сертифицированное производство</p>
+            </div>
+            <div class="reason-card__txt">
+              <p>Ежеквартально проходим проверку на соответствие государственной аттестации. Производим тщательный контроль каждого этапа производства обуви от создания модели до выпуска, что подтверждается проверяющими органами.</p>
+            </div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-card__title">
+              <img src="img/icons/work.svg" alt="">
+              <p>Ручная и автоматизированая работа</p>
+            </div>
+            <div class="reason-card__txt">
+              <p>В производстве используется один из лучших в мире станков для приклейки подошвы IronFox (привезён из Италии) и ручной труд квалифицированных сотрудников, чтобы обеспечить высокое качество обуви.</p>
+            </div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-card__title">
+              <img src="img/icons/opt.svg" alt="">
+              <p>Не только опт, но и розница</p>
+            </div>
+            <div class="reason-card__txt">
+              <p>Faber владеет сетью собственных розничных магазинов обуви. Так мы получаем обратную связь от своих покупателей. Мы прислушиваемся к мнению тех, кто носит нашу обувь, чтобы сделать её ещё лучше, понять желания и настроения потребителей. </p>
+            </div>
+          </div>
+        </div>
+        <div class="why-reasons-btn">
+          <button class="myBtn"><a href="">Каталог</a></button>
+        </div>
+      </div>
+      <!-- WHY FAVER  END -->
+      <!-- people FAVER -->
+      <div class="people-block-bacground">
+        <div class="people-block out">
+          <div id="people-block-title" class=" target-block out" style="align-items: flex-start; padding-bottom: 80px !important;">
+            <div class="sub-info" style="width: 50%;">
+              <div class="sub-line"></div>
+              <h5 class="sub-title">Профессионали своего дела</h5>
+            </div>
+            <div class="target-block__txt" style="width: 50%;">
+              <h3>В Faber работают очень <br> талантливые и <br> трудолюбивые люди</h3>
+            </div>
+          </div>
+          <div class="people-block__cards">
+            <div class="people-block__cards_card">
+              <img src="img/people1.png" alt="">
+              <div class="pc-hover"></div>
+              <div class="p-card">
+                <div class="p-card__name">Шевчун Олег <br> Алексеевич</div>
+                <div class="p-card__pos">Директор</div>
+                <div class="p-card__line"></div>
+                <div class="p-card__inf"> орг. вопросы, крупный опт <br> +380 (67) 442-82-17 </div>
+              </div>
+            </div>
+            <div class="people-block__cards_card">
+              <img src="img/people2.png" alt="">
+              <div class="pc-hover"></div>
+              <div class="p-card">
+                <div class="p-card__name">Шевчун Олег <br> Алексеевич</div>
+                <div class="p-card__pos">Директор</div>
+                <div class="p-card__line"></div>
+                <div class="p-card__inf"> орг. вопросы, крупный опт <br> +380 (67) 442-82-17 </div>
+              </div>
+            </div>
+            <div class="people-block__cards_card">
+              <img src="img/people3.png" alt="">
+              <div class="pc-hover"></div>
+              <div class="p-card">
+                <div class="p-card__name">Шевчун Олег <br> Алексеевич</div>
+                <div class="p-card__pos">Директор</div>
+                <div class="p-card__line"></div>
+                <div class="p-card__inf"> орг. вопросы, крупный опт <br> +380 (67) 442-82-17 </div>
+              </div>
+            </div>
+            <div class="people-block__cards_card">
+              <img src="img/people4.png" alt="">
+              <div class="pc-hover"></div>
+              <div class="p-card">
+                <div class="p-card__name">Шевчун Олег <br> Алексеевич</div>
+                <div class="p-card__pos">Директор</div>
+                <div class="p-card__line"></div>
+                <div class="p-card__inf"> орг. вопросы, крупный опт <br> +380 (67) 442-82-17 </div>
+              </div>
+            </div>
+            <div class="people-block__cards_card">
+              <img src="img/people5.png" alt="">
+              <div class="pc-hover"></div>
+              <div class="p-card">
+                <div class="p-card__name">Шевчун Олег <br> Алексеевич</div>
+                <div class="p-card__pos">Директор</div>
+                <div class="p-card__line"></div>
+                <div class="p-card__inf"> орг. вопросы, крупный опт <br> +380 (67) 442-82-17 </div>
+              </div>
+            </div>
+            <div class="people-block__cards_card">
+              <img src="img/people6.png" alt="">
+              <div class="pc-hover"></div>
+              <div class="p-card">
+                <div class="p-card__name">Шевчун Олег .<br> Алексеевич</div>
+                <div class="p-card__pos">Директор</div>
+                <div class="p-card__line"></div>
+                <div class="p-card__inf"> орг. вопросы, крупный опт <br> +380 (67) 442-82-17 </div>
+              </div>
+            </div>
+            <!-- <div class="slider-people">
+          <div class="people-card-slider">
+            <img src="img/people1.png" alt="">
+              <div class="p-cards">
+                  <div class="p-cards__name">Шевчун Олег .<br>
+                    Алексеевич</div>
+                    <div class="p-cards__line"></div>
+                    <div class="p-cards__pos">генеральный директор и основатель</div>
+                    
+              </div>
+          </div>
+          <div class="people-card-slider">
+            <img src="img/people2.png" alt="">
+              <div class="p-cards">
+                  <div class="p-cards__name">Шевчун Олег .<br>
+                    Алексеевич</div>
+                    <div class="p-cards__line"></div>
+                    <div class="p-cards__pos">генеральный директор и основатель</div>
+              </div>
+          </div>
+          <div class="people-card-slider">
+            <img src="img/people3.png" alt="">
+              <div class="p-cards">
+                  <div class="p-cards__name">Шевчун Олег .<br>
+                    Алексеевич</div>
+                    <div class="p-cards__line"></div>
+                    <div class="p-cards__pos">генеральный директор и основатель</div>
+              </div>
+          </div>
+          <div class="people-card-slider">
+            <img src="img/people4.png" alt="">
+              <div class="p-cards">
+                  <div class="p-cards__name">Шевчун Олег .<br>
+                    Алексеевич</div>
+                    <div class="p-cards__line"></div>
+                    <div class="p-cards__pos">генеральный директор и основатель</div>
+              </div>
+          </div>
+          <div class="people-card-slider">
+            <img src="img/people5.png" alt="">
+              <div class="p-cards">
+                  <div class="p-cards__name">Шевчун Олег .<br>
+                    Алексеевич</div>
+                    <div class="p-cards__line"></div>
+                    <div class="p-cards__pos">генеральный директор и основатель</div>
+              </div>
+          </div>
+          <div class="people-card-slider">
+            <img src="img/people6.png" alt="">
+              <div class="p-cards">
+                  <div class="p-cards__name">Шевчун Олег .<br>
+                    Алексеевич</div>
+                    <div class="p-cards__line"></div>
+                    <div class="p-cards__pos">генеральный директор и основатель</div>
+              </div>
+          </div>
+      
+      
+      
+        </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- people FAVER  END -->
+      <!-- opt FAVER -->
+      <div class="opt-block ">
+        <div class="customer-page__title out"> работа с оптовиками </div>
+        <div class="opt-con">
+          <div class="opt-con__l" style="background-image: url(img/1.png);"></div>
+          <div class="opt-con__r">
+            <div class="opt-con__r_line"></div>
+            <div class="reason-card-line">
+              <div class="reason-card">
+                <div class="reason-card__title">
+                  <img src="img/icons/money.svg" alt="">
+                  <p>Предоплата</p>
+                </div>
+                <div class="reason-card__txt">
+                  <p>Размер предоплаты определяется в индивидуальном порядке, с новыми оптовиками работаем по предоплате не меньше чем 30%.</p>
+                </div>
+              </div>
+              <div class="reason-card">
+                <div class="reason-card__title">
+                  <img src="img/icons/sale.svg" alt="">
+                  <p>Скидки</p>
+                </div>
+                <div class="reason-card__txt">
+                  <p>Для всех оптовиков в межсезонье действуют скидки и специальные условия для размещения заказа.</p>
+                </div>
+              </div>
+            </div>
+            <div class="reason-card-line">
+              <div class="reason-card">
+                <div class="reason-card__title">
+                  <img src="img/icons/box.svg" alt="">
+                  <p>Минимальный заказ</p>
+                </div>
+                <div class="reason-card__txt">
+                  <p>Минимальная оптовая отгрузка со склада от 10-и пар обуви.</p>
+                </div>
+              </div>
+              <div class="reason-card">
+                <div class="reason-card__title">
+                  <img src="img/icons/box-plus.svg" alt="">
+                  <p>Дозаказ в сезон</p>
+                </div>
+                <div class="reason-card__txt">
+                  <p>В течение сезона реализована возможность добирать обувь поразмерно со склада готовой продукции, без необходимости выкупа всей ростовки.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- opt FAVER  END -->
+      <!-- documnet block -->
+      <div class="product-slider out" style="padding-top: 150px;margin-bottom: 140px;">
+        <div class="product-slider_nav">
+          <div class="product-slider_nav__l">
+            <div class="sub-info">
+              <div class="sub-line"></div>
+              <h5 class="sub-title" style="text-shadow: none;">Документы</h5>
+            </div>
+            <div class="arrows">
+              <ul>
+                <li class="prev"></li>
+                <li class="next"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-slider_nav__r">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+              <div class="product-card">
+                <a class="test-popup-link" href="img/doc.png">
+                  <img src="img/doc.png" alt="">
+                  <div class="product-card_title">Аттестат производства (2013 г.)</div>
+                </a>
+              </div>
+              <div class="product-card">
+                <a class="test-popup-link" href="img/doc.png">
+                  <img src="img/doc.png" alt="">
+                  <div class="product-card_title">Аттестат производства (2016 г.)</div>
+                </a>
+              </div>
+              <div class="product-card">
+                <a class="test-popup-link" href="img/doc.png">
+                  <img src="img/doc.png" alt="">
+                  <div class="product-card_title">Аттестат производства (2010 г.)</div>
+                </a>
+              </div>
+              <div class="product-card">
+                <a class="test-popup-link" href="img/doc.png">
+                  <img src="img/doc.png" alt="">
+                  <div class="product-card_title">Свидетельство на знак Faber для товаров и услуг</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- documnet block end -->
+      <!-- brand BLOCK  -->
+      <div class="brand" style="justify-content: flex-end !important;">
+        <div class="brand__l" style="max-width: 500px !important">
+          <div class="brand__l_title">Качество <br> обуви для нас <br>превыше всего</div>
+          <div class="brand__l_btn">
+            <button class="myBtn">Сделать пробный заказ</button>
+          </div>
+        </div>
+        <div class="brand__r" style="background-image: url('img/man.png');"></div>
+        <div class="photo-middle"><img src="img/ob.png" alt=""></div>
+      </div>
+      <!-- brand BLOCK END -->
+      <!--  CONTACT  -->
+      <div class="contact eco-sckin out">
+        <div class="eco-sckin__title">обратная <br> связь</div>
+        <div class="contact__info-block">
+          <div class="block">
+            <div class="contact-line"></div>
+            <p>Если у Вас возникли вопрос, напишите нам. Наши <br> менеджеры ответят сразу же!</p>
+            <form action="">
+              <div class="input-wrapper">
+                <input type="text" id="user" required value="">
+                <label for="user">Ваше имя</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="text" id="user" required value="">
+                <label for="user">Ваше email</label>
+              </div>
+              <div class="textarea-wrapper">
+                <textarea required name="" id="" cols="30" rows="10"></textarea>
+                <label for="user">Ваше сообщение или вопрос</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="contact__btn">
+          <button class="myBtn">Отправить</button>
+        </div>
+      </div>
+      <!-- CONTACT END -->
+      <!-- FOOTER  -->
+      <footer>
+        <div class="footer out">
+          <div class="footer__list-info">
+            <div class="footer__list-info__menu">
+              <li><a class="act" href="">Акции %</a> </li>
+              <li> <a href="">Каталог</a> </li>
+              <li> <a href="">Магазины</a></li>
+              <li> <a href="">О компании</a> </li>
+            </div>
+            <div class="footer__list-info__pages">
+              <li> <a class="act" href="">Обмен и Возврат</a></li>
+              <li> <a href="">Оплата и Доставка</a> </li>
+              <li> <a href="">Контакты</a> </li>
+            </div>
+          </div>
+          <div class="footer__info">
+            <div class="in_block">
+              <div class="f-line"></div>
+              <div class="in_block_title">Время работы</div>
+              <div class="in_block_txt">10:00 - 19:00 <br> (без выходных)</div>
+            </div>
+            <div class="in_block">
+              <div class="f-line"></div>
+              <div class="in_block_title">Телефон</div>
+              <div class="in_block_txt">+ 38 067 79 10 634</div>
+            </div>
+          </div>
+          <div class="footer__email">
+            <div class="em-btn">
+              <div class="input-wrapper">
+                <input type="text" id="user" required value="">
+                <label for="user">Email</label>
+              </div>
+              <div class="footer__btn">
+                <button class="myBtn">Подписаться на новости</button>
+              </div>
+            </div>
+            <div class="fsocia">
+              <a href=""><img src="img/icons/f.svg" alt=""></a>
+              <a href=""><img src="img/icons/i.svg" alt=""></a>
+              <a href=""><img src="img/icons/t.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js" defer></script>
+    <!-- END scripts -->
+  </body>
+</html>

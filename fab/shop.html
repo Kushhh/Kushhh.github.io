@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>shop</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <div class="mian">
+      <!-- MODAL -->
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-login" role="document">
+          <div class="modal-content mod-con-login">
+            <button class="close-mod" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="con-login">
+              <div class="con-login__l">
+                <div class="mcl-title">Я новый пользователь</div>
+                <div class="mcl-subtitle">Отслеживай заказы и накапливай бонусы в личном кабинете</div>
+                <div class="mcl__btn">
+                  <button class="myBtn">Зарегистрироваться</button>
+                </div>
+              </div>
+              <div class="con-login__hr"></div>
+              <div class="con-login__r">
+                <div class="mcr-title">Вход</div>
+                <div class="input-wrapper">
+                  <input type="text" id="user" required value="">
+                  <label for="user">Email</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="password" id="password" required value="">
+                  <label for="user">Пароль</label>
+                </div>
+                <div class="mcr__btn">
+                  <button class="myBtn">Войти</button>
+                </div>
+                <div class="foget">
+                  <a href="">Я забыл(-ла) свой пароль</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL END -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+        <div class="modal-login" role="document">
+          <div class="modal-content mod-con-login">
+            <button class="close-mod" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="mod-line">
+              <p>Чтобы добавить товар к “Избранным” необходимо войти в свой аккаунт</p>
+            </div>
+            <div class="con-login">
+              <div class="con-login__l">
+                <div class="mcl-title">Я новый пользователь</div>
+                <div class="mcl-subtitle">Отслеживай заказы и накапливай бонусы в личном кабинете</div>
+                <div class="mcl__btn">
+                  <button class="myBtn">Зарегистрироваться</button>
+                </div>
+              </div>
+              <div class="con-login__hr"></div>
+              <div class="con-login__r">
+                <div class="mcr-title">Вход</div>
+                <div class="input-wrapper">
+                  <input type="text" id="user" required value="">
+                  <label for="user">Email</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="password" id="password" required value="">
+                  <label for="user">Пароль</label>
+                </div>
+                <div class="mcr__btn">
+                  <button class="myBtn">Войти</button>
+                </div>
+                <div class="foget">
+                  <a href="">Я забыл(-ла) свой пароль</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HEADER START -->
+      <header class="out">
+        <div class="main-header">
+          <div class="main-header_blockL">
+            <div class="header-menu">
+              <img src="img/icons/menu.svg" alt="">
+            </div>
+            <div class="header-logo">
+              <a href="index.html"> <img src="img/logo.png" alt=""></a>
+            </div>
+            <menu>
+              <li><a href="basket.html">Акции %</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="shop.html">Магазины</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+            </menu>
+          </div>
+          <div class="main-header_blockR">
+            <div class="icons">
+              <ul>
+                <li><a href=""><img src="img/icons/loop.svg" alt=""></a></li>
+                <li><a href="customer.html"><img src="img/icons/shop.svg" alt=""></a></li>
+                <li><a href="" data-toggle="modal" data-target="#modal"><img src="img/icons/love.svg" alt=""></a></li>
+                <li><a href="profile.html"><img src="img/icons/user.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="line"></div>
+            <div class="lang">
+              <a href="" data-toggle="modal" data-target="#modal2">Рус <img src="img/down.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="header-menu-mob" style="visibility: hidden;">
+        <menu>
+          <li><a class="active" href="basket.html">Акции %</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="shop.html">Магазины</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </menu>
+        <div class="header-menu-mob__foter">
+          <div class="social">
+            <img src="img/icons/f.svg" alt="">
+            <img src="img/icons/i.svg" alt="">
+            <img src="img/icons/telegram.svg" alt="">
+          </div>
+          <div class="sub-title">+ 38 067 79 10 634</div>
+        </div>
+      </div>
+      <!-- HEADER END -->
+      <!-- SHOP -->
+      <div class="shop-map out">
+        <div class="shop-map__title eco-sckin__title">магазины</div>
+        <div class="shop-map__info-block eco-sckin__info-block">
+          <div class="block">
+            <div class="shop-line eco-line"></div>
+            <p>Faber владеет сетью соб­ствен­ных роз­нич­ных и оп­тово-роз­нич­ных магазинов обуви. Мы прис­луши­ваемся к мнению наших роз­нич­ных и оптовых клиентов — сов­мест­ными усилиями делаем нашу обувь лучше.</p>
+          </div>
+        </div>
+      </div>
+      <!-- SHOP END  -->
+      <!-- MAP BLOCK STYLE 2 -->
+      <div class="map-block map-block-mob">
+        <div class="map-nav out">
+          <div class="sub-info" style="max-width: 500px;">
+            <div class="sub-line"></div>
+            <h5 class="sub-title">Оптово-розничные магазины</h5>
+          </div>
+        </div>
+        <div class="map-content" style="justify-content: flex-end !important; margin-top: 0px;">
+          <div class="map-content__l" style="max-width: 500px;">
+            <div id="tab-1" class="tab-content margin-tab current">
+              <div class="tab-con">
+                <h4>Киев</h4>
+                <div class="min-map-block">
+                  <div class="min-map-block__l">
+                    <img src="img/marker.png" alt="">
+                    <div class="info-map">
+                      <div class="tm-text"> Крайняя, 1 <br> ТЦ «Альтаир» <br> <br> 9:00 — 17:00 <br> выходной: пн <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="min-map-block__r">
+                    <div class="tm-name">Шестаковский <br> Вячеслав</div>
+                    <div class="tm-con"><br> +380 (67) 440-01-85 <br> a.lapin@faber.ua </div>
+                  </div>
+                </div>
+                <div class="min-map-block">
+                  <div class="min-map-block__l">
+                    <img src="img/marker.png" alt="">
+                    <div class="info-map">
+                      <div class="tm-text"> Крайняя, 1 <br> ТЦ «Альтаир» <br> <br> 9:00 — 17:00 <br> выходной: пн <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="min-map-block__r">
+                    <div class="tm-name">Шестаковский <br> Вячеслав</div>
+                    <div class="tm-con"><br> +380 (67) 440-01-85 <br> a.lapin@faber.ua </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-2" class="tab-content margin-tab">
+              <div class="tab-con">
+                <h4>Одесса</h4>
+                <div class="min-map-block">
+                  <div class="min-map-block__l">
+                    <img src="img/marker.png" alt="">
+                    <div class="info-map">
+                      <div class="tm-text"> Крайняя, 1 <br> ТЦ «Альтаир» <br> <br> 9:00 — 17:00 <br> выходной: пн <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="min-map-block__r">
+                    <div class="tm-name">Шестаковский <br> Вячеслав</div>
+                    <div class="tm-con"><br> +380 (67) 440-01-85 <br> a.lapin@faber.ua </div>
+                  </div>
+                </div>
+                <div class="min-map-block">
+                  <div class="min-map-block__l">
+                    <img src="img/marker.png" alt="">
+                    <div class="info-map">
+                      <div class="tm-text"> Крайняя, 1 <br> ТЦ «Альтаир» <br> <br> 9:00 — 17:00 <br> выходной: пн <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="min-map-block__r">
+                    <div class="tm-name">Шестаковский <br> Вячеслав</div>
+                    <div class="tm-con"><br> +380 (67) 440-01-85 <br> a.lapin@faber.ua </div>
+                  </div>
+                </div>
+                <div class="min-map-block">
+                  <div class="min-map-block__l">
+                    <img src="img/marker.png" alt="">
+                    <div class="info-map">
+                      <div class="tm-text"> Крайняя, 1 <br> ТЦ «Альтаир» <br> <br> 9:00 — 17:00 <br> выходной: пн <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="min-map-block__r">
+                    <div class="tm-name">Шестаковский <br> Вячеслав</div>
+                    <div class="tm-con"><br> +380 (67) 440-01-85 <br> a.lapin@faber.ua </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-content__r">
+            <div class="map-nav__r" style="align-self: flex-end;">
+              <div class="city">
+                <li class="cor a-origin first map-a" lat="50.4021702|51.4975504" lng="30.3926087|31.2870258" data-tab="tab-1">Киев</li>
+                <li class="cor map-a" lat="46.4911777|46.6518033|46.4911777" lng="30.6633715|32.5857444|30" data-tab="tab-2">Одесса</li>
+              </div>
+            </div>
+            <div id="map" style="height: 550px !important;"> </div>
+          </div>
+        </div>
+      </div>
+      <!-- MAP BLOCK STYLE 2 END -->
+      <!-- MAP BLOCK STYLE 2 -->
+      <div class="map-block map-block-mob" style="margin-bottom:145px;">
+        <div class="map-nav out" style="justify-content: flex-end !important;">
+          <div class="sub-info" style="max-width: 500px;margin-bottom: 65px !important;">
+            <div class="sub-line"></div>
+            <h5 class="sub-title">Розничные магазины</h5>
+          </div>
+        </div>
+        <div class="map-content" style="justify-content: flex-end !important;margin-top: 0px;   ">
+          <div class="map-content__l" style="max-width: 500px;">
+            <div id="tab-1a" class="tab-content2 current">
+              <div class="tab-con" style="padding-left: 0px !important;">
+                <h4>Киев</h4>
+                <div class="min-map-block">
+                  <div class="min-map-block__l">
+                    <img src="img/marker.png" alt="">
+                    <div class="info-map">
+                      <div class="tm-text"> Крайняя, 1 <br> ТЦ «Альтаир» <br> <br> 9:00 — 17:00 <br> выходной: пн <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="min-map-block__r">
+                    <div class="tm-name">Шестаковский <br> Вячеслав</div>
+                    <div class="tm-con"><br> +380 (67) 440-01-85 <br> a.lapin@faber.ua </div>
+                  </div>
+                </div>
+                <div class="min-map-block">
+                  <div class="min-map-block__l">
+                    <img src="img/marker.png" alt="">
+                    <div class="info-map">
+                      <div class="tm-text"> Крайняя, 1 <br> ТЦ «Альтаир» <br> <br> 9:00 — 17:00 <br> выходной: пн <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="min-map-block__r">
+                    <div class="tm-name">Шестаковский <br> Вячеслав</div>
+                    <div class="tm-con"><br> +380 (67) 440-01-85 <br> a.lapin@faber.ua </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-2a" class="tab-content2">
+              <div class="tab-con" style="padding-left: 0px !important;">
+                <h4>Одесса</h4>
+                <div class="min-map-block">
+                  <div class="min-map-block__l">
+                    <img src="img/marker.png" alt="">
+                    <div class="info-map">
+                      <div class="tm-text"> Крайняя, 1 <br> ТЦ «Альтаир» <br> <br> 9:00 — 17:00 <br> выходной: пн <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="min-map-block__r">
+                    <div class="tm-name">Шестаковский <br> Вячеслав</div>
+                    <div class="tm-con"><br> +380 (67) 440-01-85 <br> a.lapin@faber.ua </div>
+                  </div>
+                </div>
+                <div class="min-map-block">
+                  <div class="min-map-block__l">
+                    <img src="img/marker.png" alt="">
+                    <div class="info-map">
+                      <div class="tm-text"> Крайняя, 1 <br> ТЦ «Альтаир» <br> <br> 9:00 — 17:00 <br> выходной: пн <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="min-map-block__r">
+                    <div class="tm-name">Шестаковский <br> Вячеслав</div>
+                    <div class="tm-con"><br> +380 (67) 440-01-85 <br> a.lapin@faber.ua </div>
+                  </div>
+                </div>
+                <div class="min-map-block">
+                  <div class="min-map-block__l">
+                    <img src="img/marker.png" alt="">
+                    <div class="info-map">
+                      <div class="tm-text"> Крайняя, 1 <br> ТЦ «Альтаир» <br> <br> 9:00 — 17:00 <br> выходной: пн <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="min-map-block__r">
+                    <div class="tm-name">Шестаковский <br> Вячеслав</div>
+                    <div class="tm-con"><br> +380 (67) 440-01-85 <br> a.lapin@faber.ua </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-content__r">
+            <div class="map-nav__r" style="align-self: flex-end;">
+              <div class="city">
+                <li class="cor2 a-origin first map-a2" lat="50.4021702|51.4975504" lng="30.3926087|31.2870258" data-tab="tab-1a">Киев</li>
+                <li class="cor2 map-a2" lat="46.4911777|46.6518033|46.4911777" lng="30.6633715|32.5857444|30" data-tab="tab-2a">Одесса</li>
+              </div>
+            </div>
+            <div id="maps" style="height: 550px !important;"> </div>
+          </div>
+        </div>
+      </div>
+      <!-- MAP BLOCK STYLE 2 END -->
+      <!-- FOOTER  -->
+      <footer>
+        <div class="footer out">
+          <div class="footer__list-info">
+            <div class="footer__list-info__menu">
+              <li><a class="act" href="">Акции %</a> </li>
+              <li> <a href="">Каталог</a> </li>
+              <li> <a href="">Магазины</a></li>
+              <li> <a href="">О компании</a> </li>
+            </div>
+            <div class="footer__list-info__pages">
+              <li> <a class="act" href="">Обмен и Возврат</a></li>
+              <li> <a href="">Оплата и Доставка</a> </li>
+              <li> <a href="">Контакты</a> </li>
+            </div>
+          </div>
+          <div class="footer__info">
+            <div class="in_block">
+              <div class="f-line"></div>
+              <div class="in_block_title">Время работы</div>
+              <div class="in_block_txt">10:00 - 19:00 <br> (без выходных)</div>
+            </div>
+            <div class="in_block">
+              <div class="f-line"></div>
+              <div class="in_block_title">Телефон</div>
+              <div class="in_block_txt">+ 38 067 79 10 634</div>
+            </div>
+          </div>
+          <div class="footer__email">
+            <div class="em-btn">
+              <div class="input-wrapper">
+                <input type="text" id="user" required value="">
+                <label for="user">Email</label>
+              </div>
+              <div class="footer__btn">
+                <button class="myBtn">Подписаться на новости</button>
+              </div>
+            </div>
+            <div class="fsocia">
+              <a href=""><img src="img/icons/f.svg" alt=""></a>
+              <a href=""><img src="img/icons/i.svg" alt=""></a>
+              <a href=""><img src="img/icons/t.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js" defer></script>
+    <!-- END scripts -->
+  </body>
+</html>
